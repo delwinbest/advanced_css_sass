@@ -40,6 +40,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .logoBox {
@@ -56,6 +57,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .headingPrimaryMain {
@@ -64,7 +66,7 @@ body {
     font-weight: 400;
     letter-spacing: 35px;
     animation-name: moveInLeft;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-timing-function: ease-out;
 
     // animation-delay: 3;
@@ -78,7 +80,7 @@ body {
     font-weight: 700;
     letter-spacing: 17.4px;
     animation-name: moveInRight;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-timing-function: ease-out;
 }
 
@@ -112,4 +114,28 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.Button:link,
+.Button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s; 
+}
+
+.Button:hover {
+    transform: translateY(-3px);
+}
+
+.Button:active {
+    transform: translateY(-1px);
+}
+
+.ButtonWhite {
+    @extend .Button;
+    color: #777;
+    background-color: #fff;
 }
