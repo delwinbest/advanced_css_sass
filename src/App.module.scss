@@ -55,6 +55,7 @@ body {
 .headingPrimary {
     color: #ffffff;
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
 
 .headingPrimaryMain {
