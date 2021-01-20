@@ -8,7 +8,13 @@ function App() {
         <div className={classes.logoBox}>
           <img src={logo} alt="Logo" className={classes.logo}/>
         </div>
-        <h1 className={classes.headingPrimary}></h1>
+        <div className={classes.textBox}> 
+          <h1 className={classes.headingPrimary}>
+            <span className={classes.headingPrimaryMain}>Outdoors</span>
+            <span className={classes.headingPrimarySub}>is where life happens</span>
+          </h1>
+        </div>
+
       </header>
     </div>
   );

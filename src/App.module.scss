@@ -35,6 +35,13 @@ body {
     position: relative;  /* This is now the position from where all children positions are based. */
 }
 
+.textBox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .logoBox {
     position: absolute;
     top: 40px;
@@ -43,4 +50,23 @@ body {
 
 .logo {
     height: 35px;
+}
+
+.headingPrimary {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.headingPrimaryMain {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.headingPrimarySub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
 }
