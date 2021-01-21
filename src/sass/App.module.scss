@@ -197,3 +197,16 @@
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(black,.3);
 }
+
+@media (max-width: 476px){
+    .headingPrimary {
+        &__Main {
+            font-size: 3rem;
+            letter-spacing: 2rem;
+        }
+        &__Sub {
+            font-size: 1.5rem;
+            letter-spacing: 0.75rem;
+        }
+    }
+}
