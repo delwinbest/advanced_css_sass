@@ -1,12 +1,9 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
 $font-size-base: 0.9rem;
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-grey-dark: #777;
 
 * {
     margin: 0;
@@ -18,89 +15,67 @@ $font-size-base: 0.9rem;
 .App {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    // font-size: 16px;
     font-size: 1rem;
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     padding: 3rem;
-    // box-sizing: border-box;
 }
 
 .header {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(126, 213, 111, 0.8), 
-        rgba(40, 180, 133, 0.8)), 
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primary-dark, 0.8)), 
         url(./img/hero.jpg);
     background-size: cover;
-    // background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative;  /* This is now the position from where all children positions are based. */
-    // animation-name: backgroundZoom;
-    // animation-duration: 1s;
-    // animation-timing-function: ease-out;
-}
-
-// @keyframes backgroundZoom {
-//     0% {
-//         background-size: 95%;
-//     }
-
-//     100% {
-//         background-size: 100%;
-//     }
-// }
-
-.textBox {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.logoBox {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
+    &__textBox {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    
 }
 
 .logo {
     height: 3.5rem;
+    &__Box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
 }
 
 .headingPrimary {
-    color: #ffffff;
+    color: white;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
-}
-
-.headingPrimaryMain {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-
-    // animation-delay: 3;
-    // animation-iteration-count: 3;
-
-}
-
-.headingPrimarySub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    &__Main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    &__Sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
 }
 
 @keyframes moveInLeft {
@@ -108,11 +83,9 @@ $font-size-base: 0.9rem;
         opacity: 0;
         transform: translateX(-10rem);
     }
-
     80% {
         transform: translateX(1rem);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -124,11 +97,9 @@ $font-size-base: 0.9rem;
         opacity: 0;
         transform: translateX(10rem);
     }
-
     80% {
         transform: translateX(-1rem);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -140,54 +111,54 @@ $font-size-base: 0.9rem;
         opacity: 0;
         transform: translateY(10rem);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.Button:link,
-.Button:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s; 
-    position: relative;
-    font-size: 1.6rem;
-    &:after {
-        @extend %ButtonAfter;
+.Button {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s; 
+        position: relative;
+        font-size: 1.6rem;
+        &:after {
+            @extend %ButtonAfter;
+        }
+        &:hover {
+            @extend %ButtonHover;
+        }
+        &:active {
+            @extend %ButtonActive;
+        }
     }
-    &:hover {
-        @extend %ButtonHover;
-    }
-    &:active {
-        @extend %ButtonActive;
+    &White {
+        @extend .Button;
+        color: $color-grey-dark;
+        background-color: white;
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
+        &:after {
+            @extend %ButtonAfter;
+            background-color: white;
+        }
+        &:hover {
+            @extend %ButtonHover;
+        }
+        &.active {
+            @extend %ButtonActive;
+        }
     }
 }
 
-
-.ButtonWhite {
-    @extend .Button;
-    color: #777;
-    background-color: #fff;
-    animation-name: moveInBottom;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: backwards;
-    &:after {
-        @extend %ButtonAfter;
-        background-color: #fff;
-    }
-    &:hover {
-        @extend %ButtonHover;
-    }
-    &.active {
-        @extend %ButtonActive;
-    }
-}
 
 %ButtonAfter {
     content: "";
@@ -204,7 +175,7 @@ $font-size-base: 0.9rem;
 
 %ButtonHover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba(black,.2);
     &:after {
         @extend %ButtonHoverAfter;
     }
@@ -217,5 +188,5 @@ $font-size-base: 0.9rem;
 
 %ButtonActive {
     transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.3);
+    box-shadow: 0 0.5rem 1rem rgba(black,.3);
 }
