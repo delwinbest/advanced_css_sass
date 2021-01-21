@@ -116,6 +116,49 @@ body {
     }
 }
 
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+%ButtonAfter {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+%ButtonHover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    &:after {
+        @extend %ButtonHoverAfter;
+    }
+}
+
+%ButtonHoverAfter {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+%ButtonActive {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
 .Button:link,
 .Button:visited {
     text-transform: uppercase;
@@ -124,18 +167,35 @@ body {
     display: inline-block;
     border-radius: 100px;
     transition: all .2s; 
+    position: relative;
+    &:after {
+        @extend %ButtonAfter;
+    }
+    &:hover {
+        @extend %ButtonHover;
+    }
+    &:active {
+        @extend %ButtonActive;
+    }
 }
 
-.Button:hover {
-    transform: translateY(-3px);
-}
-
-.Button:active {
-    transform: translateY(-1px);
-}
 
 .ButtonWhite {
     @extend .Button;
     color: #777;
     background-color: #fff;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    &:after {
+        @extend %ButtonAfter;
+        background-color: #fff;
+    }
+    &:hover {
+        @extend %ButtonHover;
+    }
+    &.active {
+        @extend %ButtonActive;
+    }
 }
