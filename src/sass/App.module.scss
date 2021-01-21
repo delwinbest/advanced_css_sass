@@ -1,4 +1,7 @@
+@import './base/base';
+
 $font-size-base: 0.9rem;
+$logo-image: '../img/hero.jpg';
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
@@ -27,7 +30,7 @@ $color-grey-dark: #777;
         to right bottom,
         rgba($color-primary-light, 0.8), 
         rgba($color-primary-dark, 0.8)), 
-        url(./img/hero.jpg);
+        url($logo-image);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

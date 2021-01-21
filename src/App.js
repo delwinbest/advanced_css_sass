@@ -1,5 +1,5 @@
 import logo from './img/logo-white.png';
-import * as classes from './App.module.scss';
+import * as classes from './sass/App.module.scss';
 
 function App() {
   return (
