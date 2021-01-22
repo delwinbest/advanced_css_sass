@@ -40,12 +40,36 @@
     background-position: top;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative;  /* This is now the position from where all children positions are based. */
-    &__textBox {
+    &_textBox {
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        &_headingPrimary {
+            color: white;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+            margin-bottom: 6rem;
+            &__Main {
+                display: block;
+                font-size: 6rem;
+                font-weight: 400;
+                letter-spacing: 3.5rem;
+                animation-name: moveInLeft;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+            }
+            &__Sub {
+                display: block;
+                font-size: 2rem;
+                font-weight: 700;
+                letter-spacing: 1.75rem;
+                animation-name: moveInRight;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+            }
+        }
     }
     
     
@@ -57,31 +81,6 @@
         position: absolute;
         top: 4rem;
         left: 4rem;
-    }
-}
-
-.headingPrimary {
-    color: white;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-    &__Main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-    }
-    &__Sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
-        animation-name: moveInRight;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
     }
 }
 
@@ -199,14 +198,21 @@
 }
 
 @media (max-width: 476px){
-    .headingPrimary {
-        &__Main {
-            font-size: 3rem;
-            letter-spacing: 2rem;
-        }
-        &__Sub {
-            font-size: 1.5rem;
-            letter-spacing: 0.75rem;
+    .App {
+        padding: 2rem;
+    }
+    .header {
+        &_textBox {
+            &_headingPrimary {
+                &__Main {
+                    font-size: 3rem;
+                    letter-spacing: 2rem;
+                }
+                &__Sub {
+                    font-size: 1.5rem;
+                    letter-spacing: 0.75rem;
+                }
+            }
         }
     }
 }
