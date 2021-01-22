@@ -1,0 +1,19 @@
+@media (max-width: 476px){
+    .App {
+        padding: 2rem;
+    }
+    .header {
+        &_textBox {
+            &_headingPrimary {
+                &__Main {
+                    font-size: 2.7rem;
+                    letter-spacing: 2rem;
+                }
+                &__Sub {
+                    font-size: 1.5rem;
+                    letter-spacing: 0.75rem;
+                }
+            }
+        }
+    }
+}

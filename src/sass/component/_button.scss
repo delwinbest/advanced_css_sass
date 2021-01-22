@@ -1,0 +1,73 @@
+.Button {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s; 
+        position: relative;
+        font-size: 1.6rem;
+        &:after {
+            @extend %ButtonAfter;
+        }
+        &:hover {
+            @extend %ButtonHover;
+        }
+        &:active {
+            @extend %ButtonActive;
+        }
+    }
+    &White {
+        @extend .Button;
+        color: $color-grey-dark;
+        background-color: white;
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
+        &:after {
+            @extend %ButtonAfter;
+            background-color: white;
+        }
+        &:hover {
+            @extend %ButtonHover;
+        }
+        &.active {
+            @extend %ButtonActive;
+        }
+    }
+}
+
+
+%ButtonAfter {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+%ButtonHover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(black,.2);
+    &:after {
+        @extend %ButtonHoverAfter;
+    }
+}
+
+%ButtonHoverAfter {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+%ButtonActive {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(black,.3);
+}

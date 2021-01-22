@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.App {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+    box-sizing: border-box;
+}
