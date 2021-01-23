@@ -1,0 +1,63 @@
+.card {
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    position: relative;
+    height: 50rem;
+
+    &_Side {
+        height: 50rem;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 40px rgba(black, 0.15);
+
+        &__Front {
+            @extend .card_Side;
+            background-color: white;
+        }
+
+        &__Back {
+            @extend .card_Side;
+            transform: rotateY(180deg);
+
+            &__1 {
+                @extend .card_Side__Back;
+                background-image: linear-gradient(
+                    to bottom right, 
+                    $color-secondary-light, 
+                    $color-secondary-dark);
+            }
+
+            &__2 {
+                @extend .card_Side__Back;
+                background-image: linear-gradient(
+                    to bottom right, 
+                    $color-primary-light, 
+                    $color-primary-dark);
+            }
+
+            &__3 {
+                @extend .card_Side__Back;
+                background-image: linear-gradient(
+                    to bottom right, 
+                    $color-tertiary-light, 
+                    $color-tertiary-dark);
+            }
+
+        }
+    }
+
+    &:hover &_Side__Front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &_Side__Back{
+        transform: rotateY(0deg);
+    }
+
+
+}

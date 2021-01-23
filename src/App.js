@@ -22,7 +22,7 @@ function App() {
       </header>
 
       <main>
-        <div className="sectionAbout">
+        <section className="sectionAbout">
           <div className="u_centerText">
             <h2 className="headingSecondary u_marginBottom__big">Exciting tours for adventurous people</h2>
           </div>
@@ -44,7 +44,7 @@ function App() {
               <img src={about_image_3} alt="" className="composition_Photo composition_Photo__p3"/>
             </div>
           </div>
-        </div>
+        </section>
 
         <section className="sectionFeatures">
           <div className="gridRow">
@@ -86,67 +86,103 @@ function App() {
             </div>
           </div>
         </section>
-
+        <section className="sectionTours">
+          <div className="u_centerText">
+            <h2 className="headingSecondary u_marginBottom__big">Most popular tours</h2>
+          </div>
+          <div className="gridRow">
+          <div className="gridRow_Col__1_of_3">
+            <div className="card">
+              <div className="card_Side__Front">
+                FRONT
+              </div>
+              <div className="card_Side__Back__1">
+                BACK
+              </div>
+            </div>
+          </div>
+          <div className="gridRow_Col__1_of_3">
+            <div className="card">
+            <div className="card_Side__Front">
+                FRONT
+              </div>
+              <div className="card_Side__Back__2">
+                BACK
+              </div>
+            </div>
+          </div>
+          <div className="gridRow_Col__1_of_3">
+            <div className="card">
+            <div className="card_Side__Front">
+                FRONT
+              </div>
+              <div className="card_Side__Back__3">
+                BACK
+              </div>
+            </div> 
+          </div>
+          </div>
+        </section>
       </main>
 
       {/* <section className={gridTest}>
-        <div className={gridTest_Row}>
-          <div className={gridTest_Col__1_of_2}>
+        <div className={gridRow}>
+          <div className={gridRow_Col__1_of_2}>
             Col 1 of 2  
           </div>
-          <div className={gridTest_Col__1_of_2}>
+          <div className={gridRow_Col__1_of_2}>
             Col 1 of 2  
           </div>
         </div>
-        <div className={gridTest_Row}>
-          <div className={gridTest_Col__1_of_3}>
+        <div className={gridRow}>
+          <div className={gridRow_Col__1_of_3}>
             Col 1 of 3  
           </div>
-          <div className={gridTest_Col__1_of_3}>
+          <div className={gridRow_Col__1_of_3}>
             Col 1 of 3  
           </div>
-          <div className={gridTest_Col__1_of_3}>
+          <div className={gridRow_Col__1_of_3}>
             Col 1 of 3  
           </div>
         </div>
-        <div className={gridTest_Row}>
-          <div className={gridTest_Col__1_of_3}>
+        <div className={gridRow}>
+          <div className={gridRow_Col__1_of_3}>
             Col 1 of 3  
           </div>
-          <div className={gridTest_Col__2_of_3}>
+          <div className={gridRow_Col__2_of_3}>
             Col 2 of 3  
           </div>
         </div>
-        <div className={gridTest_Row}>
-          <div className={gridTest_Col__1_of_4}>
+        <div className={gridRow}>
+          <div className={gridRow_Col__1_of_4}>
             Col 1 of 4  
           </div>
-          <div className={gridTest_Col__1_of_4}>
+          <div className={gridRow_Col__1_of_4}>
             Col 1 of 4  
           </div>
-          <div className={gridTest_Col__1_of_4}>
+          <div className={gridRow_Col__1_of_4}>
             Col 1 of 4  
           </div>
-          <div className={gridTest_Col__1_of_4}>
+          <div className={gridRow_Col__1_of_4}>
             Col 1 of 4  
           </div>
         </div>
-        <div className={gridTest_Row}>
-          <div className={gridTest_Col__1_of_4}>
+        <div className={gridRow}>
+          <div className={gridRow_Col__1_of_4}>
             Col 1 of 4  
           </div>
-          <div className={gridTest_Col__1_of_4}>
+          <div className={gridRow_Col__1_of_4}>
             Col 1 of 4  
           </div>
-          <div className={gridTest_Col__2_of_4}>
+          <div className={gridRow_Col__2_of_4}>
             Col 2 of 4  
           </div>
         </div>
-        <div className={gridTest_Row}>
-          <div className={gridTest_Col__1_of_4}>
+        <div className={gridRow}>
+          <div className={gridRow_Col__1_of_4}>
             Col 1 of 4  
           </div>
-          <div className={gridTest_Col__3_of_4}>
+          <div className={gridRow_Col__3_of_4}>
             Col 3 of 4  
           </div>
         </div>
