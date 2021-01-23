@@ -16,7 +16,16 @@ function App() {
           <a href="/#" className={classes.ButtonWhite}>Discover our tours</a>
         </div>
       </header>
-      <section className={classes.gridTest}>
+
+      <main>
+        <div className={classes.sectionAbout}>
+          <div className={classes.u_centerText}>
+            <h2 className={classes.headingSecondary}>Exciting tours for adventurous people</h2>
+          </div>
+        </div>
+      </main>
+
+      {/* <section className={classes.gridTest}>
         <div className={classes.gridTest_Row}>
           <div className={classes.gridTest_Col__1_of_2}>
             Col 1 of 2  
@@ -77,7 +86,7 @@ function App() {
             Col 3 of 4  
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
