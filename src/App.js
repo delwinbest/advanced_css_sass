@@ -125,11 +125,11 @@ function App() {
                 </h4>
                 <div className="cardDetails">
                   <ul>
-                    <li>3 day tour</li>
-                    <li>Up to 30 people</li>
-                    <li>2 tour guides</li>
-                    <li>Sleep in cozy hotels</li>
-                    <li>Difficulty: Easy</li>
+                  <li>7 day tours</li>
+                  <li>Up to 40 people</li>
+                  <li>6 tour guides</li>
+                  <li>Sleep in provided tents</li>
+                  <li>Difficulty: Medium</li>
                   </ul>
                 </div>
               </div>
@@ -149,11 +149,11 @@ function App() {
                 </h4>
                 <div className="cardDetails">
                   <ul>
-                    <li>3 day tour</li>
-                    <li>Up to 30 people</li>
-                    <li>2 tour guides</li>
-                    <li>Sleep in cozy hotels</li>
-                    <li>Difficulty: Easy</li>
+                  <li>5 day tours</li>
+                  <li>Up to 15 people</li>
+                  <li>3 tour guides</li>
+                  <li>Sleep in provided tents</li>
+                  <li>Difficulty: Hard</li>
                   </ul>
                 </div>
               </div>
