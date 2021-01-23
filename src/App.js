@@ -100,7 +100,13 @@ function App() {
                   <span className="cardHeading_Span__1">The Sea Explorer</span>
                 </h4>
                 <div className="cardDetails">
-                  Details
+                  <ul>
+                    <li>3 day tour</li>
+                    <li>Up to 30 people</li>
+                    <li>2 tour guides</li>
+                    <li>Sleep in cozy hotels</li>
+                    <li>Difficulty: Easy</li>
+                  </ul>
                 </div>
               </div>
               <div className="card_Side__Back__1">
@@ -118,7 +124,13 @@ function App() {
                   <span className="cardHeading_Span__2">The Forest Hiker</span>
                 </h4>
                 <div className="cardDetails">
-                  Details
+                  <ul>
+                    <li>3 day tour</li>
+                    <li>Up to 30 people</li>
+                    <li>2 tour guides</li>
+                    <li>Sleep in cozy hotels</li>
+                    <li>Difficulty: Easy</li>
+                  </ul>
                 </div>
               </div>
               <div className="card_Side__Back__2">
@@ -136,7 +148,13 @@ function App() {
                   <span className="cardHeading_Span__3">The Snow Adventurer</span>
                 </h4>
                 <div className="cardDetails">
-                  Details
+                  <ul>
+                    <li>3 day tour</li>
+                    <li>Up to 30 people</li>
+                    <li>2 tour guides</li>
+                    <li>Sleep in cozy hotels</li>
+                    <li>Difficulty: Easy</li>
+                  </ul>
                 </div>
               </div>
               <div className="card_Side__Back__3">

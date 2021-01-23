@@ -2,10 +2,10 @@
     perspective: 1500px;
     -moz-perspective: 1500px;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &_Side {
-        height: 50rem;
+        height: 52rem;
         transition: all 0.8s ease;
         position: absolute;
         top: 0;
@@ -135,6 +135,26 @@
                 to right bottom, 
                 rgba($color-tertiary-light, .85), 
                 rgba($color-tertiary-dark, .85));
+        }
+    }
+
+    &Details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
         }
     }
 
