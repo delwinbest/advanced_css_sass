@@ -1,0 +1,20 @@
+.gridTest {
+    &_Row {
+    max-width: $grid-width;
+    background-color: lightgrey;
+    margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical; 
+    }
+    }
+
+    &_Col__1_of_2{
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        background-color: orangered;
+        float: left;
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal; 
+        }
+    }
+
+}
