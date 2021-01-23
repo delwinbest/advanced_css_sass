@@ -1,4 +1,7 @@
 import logo from './img/logo-white.png';
+import about_image_1 from './img/nat-1-large.jpg';
+import about_image_2 from './img/nat-2-large.jpg';
+import about_image_3 from './img/nat-3-large.jpg';
 // import * as classes from './sass/App.module.scss';
 import './sass/App.scss';
 
@@ -7,7 +10,7 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="logo__Box">
-          <img   src={logo} alt="Logo" className="logo"/>
+          <img src={logo} alt="Logo" className="logo"/>
         </div>
         <div className="header_textBox"> 
           <h1 className="header_textBox_headingPrimary">
@@ -35,7 +38,11 @@ function App() {
             <a href="/#" className="buttonText">Learn more {String.fromCharCode(0x2192)}</a>
           </div>
           <div className="gridTest_Col__1_of_2">
-            IMAGES
+            <div className="composition">
+              <img src={about_image_1} alt="" className="composition_Photo composition_Photo__p1"/>
+              <img src={about_image_2} alt="" className="composition_Photo composition_Photo__p2"/>
+              <img src={about_image_3} alt="" className="composition_Photo composition_Photo__p3"/>
+            </div>
           </div>
         </div>
       </main>
