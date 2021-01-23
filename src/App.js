@@ -47,7 +47,44 @@ function App() {
         </div>
 
         <section className="sectionFeatures">
-          <i className="icon-basic-world"></i>
+          <div className="gridRow">
+            <div className="gridRow_Col__1_of_4">
+              <div className="featureBox">
+                <i className="featureBox__Icon icon-basic-world"></i>
+                <h3 className="headingTertiary u_marginBottom__small">Expore the world</h3>
+                <p className="featureBox__Text">
+                  Lorem ipsum dolor sit amet adipisicing elit. Culpa, quaerat ea ipsa nulla. Fuga, adipisci dolor. Totam facere in quam atque.
+                </p>
+              </div>
+            </div>
+            <div className="gridRow_Col__1_of_4">
+              <div className="featureBox">
+                <i className="featureBox__Icon icon-basic-map"></i>
+                <h3 className="headingTertiary u_marginBottom__small">Meet Nature</h3>
+                <p className="featureBox__Text">
+                  Lorem ipsum dolor sit amet adipisicing elit. Culpa, quaerat ea ipsa nulla. Fuga, adipisci dolor. Totam facere in quam atque.
+                </p>
+              </div>
+            </div>
+            <div className="gridRow_Col__1_of_4">
+              <div className="featureBox">
+                <i className="featureBox__Icon icon-basic-compass"></i>
+                <h3 className="headingTertiary u_marginBottom__small">Find you way</h3>
+                <p className="featureBox__Text">
+                  Lorem ipsum dolor sit amet adipisicing elit. Culpa, quaerat ea ipsa nulla. Fuga, adipisci dolor. Totam facere in quam atque.
+                </p>
+              </div>
+            </div>
+            <div className="gridRow_Col__1_of_4">
+              <div className="featureBox">
+                <i className="featureBox__Icon icon-basic-heart"></i>
+                <h3 className="headingTertiary u_marginBottom__small">Live a Healthier Life</h3>
+                <p className="featureBox__Text">
+                  Lorem ipsum dolor sit amet adipisicing elit. Culpa, quaerat ea ipsa nulla. Fuga, adipisci dolor. Totam facere in quam atque.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
       </main>
