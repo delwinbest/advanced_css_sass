@@ -45,6 +45,11 @@ function App() {
             </div>
           </div>
         </div>
+
+        <section className="sectionFeatures">
+          <i className="icon-basic-world"></i>
+        </section>
+
       </main>
 
       {/* <section className={gridTest}>
