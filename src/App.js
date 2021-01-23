@@ -94,7 +94,15 @@ function App() {
           <div className="gridRow_Col__1_of_3">
             <div className="card">
               <div className="card_Side__Front">
-                FRONT
+                <div className="cardPicture__1">
+
+                </div>
+                <div className="cardHeading">
+                  Heading
+                </div>
+                <div className="cardDetails">
+                  Details
+                </div>
               </div>
               <div className="card_Side__Back__1">
                 BACK
@@ -104,7 +112,15 @@ function App() {
           <div className="gridRow_Col__1_of_3">
             <div className="card">
             <div className="card_Side__Front">
-                FRONT
+                <div className="cardPicture__2">
+
+                </div>
+                <div className="cardHeading">
+                  Heading
+                </div>
+                <div className="cardDetails">
+                  Details
+                </div>
               </div>
               <div className="card_Side__Back__2">
                 BACK
@@ -114,7 +130,15 @@ function App() {
           <div className="gridRow_Col__1_of_3">
             <div className="card">
             <div className="card_Side__Front">
-                FRONT
+                <div className="cardPicture__3">
+
+                </div>
+                <div className="cardHeading">
+                  Heading
+                </div>
+                <div className="cardDetails">
+                  Details
+                </div>
               </div>
               <div className="card_Side__Back__3">
                 BACK

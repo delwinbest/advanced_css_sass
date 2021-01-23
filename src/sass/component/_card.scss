@@ -60,4 +60,37 @@
     }
 
 
+    &Picture {
+        height: 23rem;
+        background-size: cover;
+        background-blend-mode: screen;
+
+        &__1 {
+            @extend .cardPicture;
+            background-image: linear-gradient(
+                    to bottom right, 
+                    $color-secondary-light, 
+                    $color-secondary-dark), url($card-image-1);
+            
+        }
+
+        &__2 {
+            @extend .cardPicture;
+            background-image: linear-gradient(
+                    to bottom right, 
+                    $color-primary-light, 
+                    $color-primary-dark), url($card-image-2);
+            
+        }
+
+        &__3 {
+            @extend .cardPicture;
+            background-image: linear-gradient(
+                    to bottom right, 
+                    $color-tertiary-light, 
+                    $color-tertiary-dark), url($card-image-3);
+            
+        }
+    }
+
 }
