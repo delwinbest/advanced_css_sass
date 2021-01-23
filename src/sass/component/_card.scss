@@ -14,6 +14,7 @@
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 40px rgba(black, 0.15);
+        overflow: hidden;
 
         &__Front {
             @extend .card_Side;
@@ -63,7 +64,10 @@
     &Picture {
         height: 23rem;
         background-size: cover;
-        background-blend-mode: screen;
+        background-blend-mode: soft-light;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
 
         &__1 {
             @extend .cardPicture;
@@ -90,6 +94,47 @@
                     $color-tertiary-light, 
                     $color-tertiary-dark), url($card-image-3);
             
+        }
+    }
+
+    &Heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        width: 75%;
+    }
+
+    &Heading_Span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+
+        &__1 {
+            @extend .cardHeading_Span;
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-secondary-light, .85), 
+                rgba($color-secondary-dark, .85));
+        }
+
+        &__2 {
+            @extend .cardHeading_Span;
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-primary-light, .85), 
+                rgba($color-primary-dark, .85));
+        }
+
+        &__3 {
+            @extend .cardHeading_Span;
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-tertiary-light, .85), 
+                rgba($color-tertiary-dark, .85));
         }
     }
 

@@ -95,11 +95,10 @@ function App() {
             <div className="card">
               <div className="card_Side__Front">
                 <div className="cardPicture__1">
-
                 </div>
-                <div className="cardHeading">
-                  Heading
-                </div>
+                <h4 className="cardHeading">
+                  <span className="cardHeading_Span__1">The Sea Explorer</span>
+                </h4>
                 <div className="cardDetails">
                   Details
                 </div>
@@ -115,9 +114,9 @@ function App() {
                 <div className="cardPicture__2">
 
                 </div>
-                <div className="cardHeading">
-                  Heading
-                </div>
+                <h4 className="cardHeading">
+                  <span className="cardHeading_Span__2">The Forest Hiker</span>
+                </h4>
                 <div className="cardDetails">
                   Details
                 </div>
@@ -133,9 +132,9 @@ function App() {
                 <div className="cardPicture__3">
 
                 </div>
-                <div className="cardHeading">
-                  Heading
-                </div>
+                <h4 className="cardHeading">
+                  <span className="cardHeading_Span__3">The Snow Adventurer</span>
+                </h4>
                 <div className="cardDetails">
                   Details
                 </div>

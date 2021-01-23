@@ -8,6 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative;  /* This is now the position from where all children positions are based. */
     &_textBox {
