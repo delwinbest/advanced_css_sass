@@ -1,5 +1,4 @@
-.gridTest {
-    &_Row {
+.gridRow {
     max-width: $grid-width;
     background-color: lightgrey;
     margin: 0 auto;
@@ -7,7 +6,6 @@
         margin-bottom: $gutter-vertical; 
     }
     @include clearfix;
-    }
 
     &_Col__1_of_2{
         width: calc((100% - #{$gutter-horizontal}) / 2);

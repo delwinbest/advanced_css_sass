@@ -26,7 +26,7 @@ function App() {
           <div className="u_centerText">
             <h2 className="headingSecondary u_marginBottom__big">Exciting tours for adventurous people</h2>
           </div>
-          <div className="gridTest_Col__1_of_2">
+          <div className="gridRow_Col__1_of_2">
             <h3 className="headingTertiary u_marginBottom__small">You're going to fall in love with nature</h3>
             <p className="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore quam ex esse eveniet eos molestias iusto excepturi assumenda, neque ab! Beatae, dolor.
@@ -37,7 +37,7 @@ function App() {
             </p>
             <a href="/#" className="buttonText">Learn more {String.fromCharCode(0x2192)}</a>
           </div>
-          <div className="gridTest_Col__1_of_2">
+          <div className="gridRow_Col__1_of_2">
             <div className="composition">
               <img src={about_image_1} alt="" className="composition_Photo composition_Photo__p1"/>
               <img src={about_image_2} alt="" className="composition_Photo composition_Photo__p2"/>
