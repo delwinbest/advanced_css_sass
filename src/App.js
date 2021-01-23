@@ -21,13 +21,21 @@ function App() {
       <main>
         <div className="sectionAbout">
           <div className="u_centerText">
-            <h2 className="headingSecondary u_marginBotom__8">Exciting tours for adventurous people</h2>
+            <h2 className="headingSecondary u_marginBottom__big">Exciting tours for adventurous people</h2>
           </div>
           <div className="gridTest_Col__1_of_2">
-            Col 1 of 2  
+            <h3 className="headingTertiary u_marginBottom__small">You're going to fall in love with nature</h3>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore quam ex esse eveniet eos molestias iusto excepturi assumenda, neque ab! Beatae, dolor.
+            </p>
+            <h3 className="headingTertiary u_marginBottom__small">Live adventures like you never have before</h3>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas consequatur magni, culpa explicabo doloribus nostrum dolorem? Unde harum amet dicta, itaque asperiores.
+            </p>
+            <a href="/#" className="buttonText">Learn more {String.fromCharCode(0x2192)}</a>
           </div>
           <div className="gridTest_Col__1_of_2">
-            Col 1 of 2  
+            IMAGES
           </div>
         </div>
       </main>

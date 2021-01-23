@@ -7,7 +7,7 @@
 }
 
 @mixin columnProperties {
-    background-color: orangered;
+    // background-color: orangered;
     float: left;
     &:not(:last-child) {
         margin-right: $gutter-horizontal; 
