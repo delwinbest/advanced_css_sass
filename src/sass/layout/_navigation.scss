@@ -50,13 +50,43 @@
         
 
 
-        &_Items {
+        &_Item {
+            margin: 1rem;
             
-
         }
     }
 
     &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            background-image: linear-gradient(120deg,
+                    transparent 0%,
+                    transparent 50%,
+                    white 50%
+                    );
+            background-size: 250%;
+            transition: all .4s;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary;
+            transform: translateX(1rem)
+        }
+
 
     }
 

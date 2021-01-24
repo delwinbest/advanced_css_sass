@@ -21,11 +21,11 @@ function App() {
 
         <nav className="navigation__nav">
           <ul className="navigation_List">
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link">About Natours</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Your benefits</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Popular tours</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Stories</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Book now</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>01</span> About Natours</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>02</span> Your benefits</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>03</span> Popular tours</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>04</span> Stories</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>05</span> Book now</a></li>
           </ul>
         </nav>
       </div>
