@@ -37,7 +37,7 @@
             left: 0;
         }
 
-        &::before { top: -.8rem; transform-origin: right;}
+        &::before { top: -.8rem; }
         &::after { top: .8rem; }
 
     }
