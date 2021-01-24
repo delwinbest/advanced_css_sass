@@ -181,7 +181,11 @@ function App() {
             </div> 
           </div>
           </div>
+            <div className="u_centerText u_marginTop__huge">
+              <a href="/#" className="ButtonGreen">Discover all tours</a>
+            </div>
         </section>
+
       </main>
 
       {/* <section className={gridTest}>

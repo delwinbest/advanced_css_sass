@@ -38,6 +38,22 @@
             @extend %ButtonActive;
         }
     }
+
+    &Green {
+        @extend .Button;
+        color: white;
+        background-color: $color-primary;
+        &:after {
+            @extend %ButtonAfter;
+            background-color:  $color-primary;
+        }
+        &:hover {
+            @extend %ButtonHover;
+        }
+        &.active {
+            @extend %ButtonActive;
+        }
+    }
 }
 
 
