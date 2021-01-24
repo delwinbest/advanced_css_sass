@@ -16,7 +16,7 @@ function App() {
 
       <div className="navigation">
         <input type="checkbox" className="navigation_Checkbox" id="navi-toggle"/>
-        <label htmlFor="navi-toggle" className="navigation_Button">MENU</label>
+        <label htmlFor="navi-toggle" className="navigation_Button"><span className="navigation__icon">&nbsp;</span></label>
         <div className="navigation__background">&nbsp;</div>
 
         <nav className="navigation__nav">

@@ -10,9 +10,36 @@
         right: 6.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
-        transition: all .8s;
+        transition: all .8s cubic-bezier(0.83, 0, 0.17, 1);;
         // transform: scale(80);
         
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+        cursor: pointer;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-3;
+            display: inline-block;
+            transition: all .8s;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::before { top: -.8rem;}
+        &::after { top: .8rem; }
+
     }
 
 
@@ -29,6 +56,20 @@
             width: 100%;
         }
 
+        &:checked + .navigation_Button .navigation__icon {
+            background-color: transparent;
+        }
+
+        &:checked + .navigation_Button .navigation__icon::before {
+            transform: rotate(135deg);
+            top: 0;
+        }
+
+        &:checked + .navigation_Button .navigation__icon::after {
+            transform: rotate(-135deg);
+            top: 0;
+        }
+
     }
 
     &_Button {
@@ -41,6 +82,20 @@
         right: 6rem;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
+        text-align: center;
+        cursor: pointer;
+
+        &:hover .navigation__icon::before {
+            top: -1rem;
+        }
+        &:hover .navigation__icon::after {
+            top: 1rem;
+        }
+
+        &:active {
+            box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
+            top: 6.2rem;
+        }
     }
 
     &__nav {
