@@ -110,7 +110,13 @@ function App() {
                 </div>
               </div>
               <div className="card_Side__Back__1">
-                BACK
+                <div className="card_CTA">
+                  <div className="card_PriceBox">
+                    <p className="card_Pricebox__priceOnly">Only</p>
+                    <p className="card_PriceBox__priceValue">$297</p>
+                  </div>
+                  <a href="/#" className="ButtonWhite">Book Now!</a>
+                </div>  
               </div>
             </div>
           </div>
@@ -134,7 +140,13 @@ function App() {
                 </div>
               </div>
               <div className="card_Side__Back__2">
-                BACK
+                <div className="card_CTA">
+                  <div className="card_PriceBox">
+                    <p className="card_Pricebox__priceOnly">Only</p>
+                    <p className="card_PriceBox__priceValue">$497</p>
+                  </div>
+                  <a href="/#" className="ButtonWhite">Book Now!</a>
+                </div>  
               </div>
             </div>
           </div>
@@ -158,7 +170,13 @@ function App() {
                 </div>
               </div>
               <div className="card_Side__Back__3">
-                BACK
+                <div className="card_CTA">
+                  <div className="card_PriceBox">
+                    <p className="card_Pricebox__priceOnly">Only</p>
+                    <p className="card_PriceBox__priceValue">$895</p>
+                  </div>
+                  <a href="/#" className="ButtonWhite">Book Now!</a>
+                </div>  
               </div>
             </div> 
           </div>
