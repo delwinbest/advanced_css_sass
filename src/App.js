@@ -5,6 +5,8 @@ import about_image_2 from './img/nat-2-large.jpg';
 import about_image_3 from './img/nat-3-large.jpg';
 import person_image_1 from './img/nat-8.jpg';
 import person_image_2 from './img/nat-9.jpg';
+import popup_image_1 from './img/nat-8.jpg';
+import popup_image_2 from './img/nat-9.jpg';
 import background_video_mp4 from './img/video.mp4';
 import background_video_webm from './img/video.webm';
 // import * as classes from './sass/App.module.scss';
@@ -316,6 +318,33 @@ function App() {
           </div>
         </div>
       </footer>
+      
+      
+      <div className="popup">   
+        <div className="popup_Content">
+          <div className="popup__left">
+            <img src={popup_image_1} alt="Tour" className="popup__img"/>
+            <img src={popup_image_2} alt="Tour" className="popup__img"/>
+          </div>
+          <div className="popup__right">
+            <h2 className="headingSecondary u_marginBottom__small">Start booking now</h2>
+            <h3 className="headingTertiary u_marginBottom__small">Important - Please read these terms before booking</h3>
+            <p className="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
+                amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
+                sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
+                gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+                Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
+                vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
+                vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
+                euismod nisi porta.
+            </p>
+            <a href="/#" className="ButtonGreen">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      
       {/* <section className={gridTest}>
         <div className={gridRow}>
           <div className={gridRow_Col__1_of_2}>
