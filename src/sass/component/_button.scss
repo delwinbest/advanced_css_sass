@@ -28,7 +28,7 @@
     }
     &White {
         @extend .Button;
-        color: $color-grey-dark;
+        color: $color-grey-dark-1;
         background-color: white;
         animation-name: moveInBottom;
         animation-duration: 1s;

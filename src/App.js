@@ -1,4 +1,5 @@
 import logo from './img/logo-white.png';
+import logo_green from './img/logo-green-2x.png';
 import about_image_1 from './img/nat-1-large.jpg';
 import about_image_2 from './img/nat-2-large.jpg';
 import about_image_3 from './img/nat-3-large.jpg';
@@ -273,6 +274,31 @@ function App() {
         </section>
       </main>
 
+      <footer className="footer">
+        <div className="footer_LogoBox">
+          <img src={logo_green} alt="Full Logo" className="footer_Logo"/>
+        </div>
+        <div className="gridRow">
+          <div className="gridRow_Col__1_of_2">
+            <div className="footer_Navigation">
+              <ul className="footer__List">
+                <li className="footer__ListItem"><a href="/#" className="footer__Link">Company</a></li>
+                <li className="footer__ListItem"><a href="/#" className="footer__Link">Contact us</a></li>
+                <li className="footer__ListItem"><a href="/#" className="footer__Link">Careers</a></li>
+                <li className="footer__ListItem"><a href="/#" className="footer__Link">Privacy</a></li>
+                <li className="footer__ListItem"><a href="/#" className="footer__Link">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="gridRow_Col__1_of_2">
+            <p className="footer__Copyright">
+              Built by <a href="/#" className="footer__Link">Delwin Best</a> for his personal studies. 
+              Copyright &copy; by Delwin Best. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design.
+              Design by Jonas Schedtmann.
+            </p>
+          </div>
+        </div>
+      </footer>
       {/* <section className={gridTest}>
         <div className={gridRow}>
           <div className={gridRow_Col__1_of_2}>
