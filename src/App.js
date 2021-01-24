@@ -23,11 +23,11 @@ function App() {
 
         <nav className="navigation__nav">
           <ul className="navigation_List">
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>01</span> About Natours</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>02</span> Your benefits</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>03</span> Popular tours</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>04</span> Stories</a></li>
-            <li className="navigation_List_Item"><a href="/#" className="navigation__link"><span>05</span> Book now</a></li>
+            <li className="navigation_List_Item"><a href="#section-about" className="navigation__link"><span>01</span>About Natours</a></li>
+            <li className="navigation_List_Item"><a href="#section-features" className="navigation__link"><span>02</span>Your benefits</a></li>
+            <li className="navigation_List_Item"><a href="#section-tours" className="navigation__link"><span>03</span>Popular tours</a></li>
+            <li className="navigation_List_Item"><a href="#section-stories" className="navigation__link"><span>04</span>Stories</a></li>
+            <li className="navigation_List_Item"><a href="#section-booking" className="navigation__link"><span>05</span>Book now</a></li>
           </ul>
         </nav>
       </div>
@@ -41,12 +41,12 @@ function App() {
             <span className="header_textBox_headingPrimary__Main">Outdoors</span>
             <span className="header_textBox_headingPrimary__Sub">is where life happens</span>
           </h1>
-          <a href="/#" className="ButtonWhite">Discover our tours</a>
+          <a href="#section-tours" className="ButtonWhite">Discover our tours</a>
         </div>
       </header>
 
       <main>
-        <section className="sectionAbout">
+        <section className="sectionAbout" id="section-about">
           <div className="u_centerText">
             <h2 className="headingSecondary u_marginBottom__big">Exciting tours for adventurous people</h2>
           </div>
@@ -69,8 +69,7 @@ function App() {
             </div>
           </div>
         </section>
-
-        <section className="sectionFeatures">
+        <section className="sectionFeatures" id="section-features">
           <div className="gridRow">
             <div className="gridRow_Col__1_of_4">
               <div className="featureBox">
@@ -110,7 +109,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="sectionTours">
+        <section className="sectionTours" id="section-tours">
           <div className="u_centerText">
             <h2 className="headingSecondary u_marginBottom__big">Most popular tours</h2>
           </div>
@@ -139,7 +138,7 @@ function App() {
                     <p className="card_Pricebox__priceOnly">Only</p>
                     <p className="card_PriceBox__priceValue">$297</p>
                   </div>
-                  <a href="/#" className="ButtonWhite">Book Now!</a>
+                  <a href="#popup" className="ButtonWhite">Book Now!</a>
                 </div>  
               </div>
             </div>
@@ -169,7 +168,7 @@ function App() {
                     <p className="card_Pricebox__priceOnly">Only</p>
                     <p className="card_PriceBox__priceValue">$497</p>
                   </div>
-                  <a href="/#" className="ButtonWhite">Book Now!</a>
+                  <a href="#popup" className="ButtonWhite">Book Now!</a>
                 </div>  
               </div>
             </div>
@@ -199,7 +198,7 @@ function App() {
                     <p className="card_Pricebox__priceOnly">Only</p>
                     <p className="card_PriceBox__priceValue">$895</p>
                   </div>
-                  <a href="/#" className="ButtonWhite">Book Now!</a>
+                  <a href="#popup" className="ButtonWhite">Book Now!</a>
                 </div>  
               </div>
             </div> 
@@ -209,8 +208,7 @@ function App() {
               <a href="/#" className="ButtonGreen">Discover all tours</a>
             </div>
         </section>
-
-        <section className="sectionStories">
+        <section className="sectionStories" id="section-stories">
           <div className="bg_Video">
             <video className="bg_Content" autoPlay muted loop>
               <source src={background_video_mp4} type="video/mp4" />
@@ -255,7 +253,7 @@ function App() {
             <a href="/#" className="buttonText">Read all stories {String.fromCharCode(0x2192)}</a>
           </div>
         </section>
-        <section className="sectionBooking">
+        <section className="sectionBooking" id="section-booking">
           <div className="gridRow">
             <div className="sectionBooking_Container">
               <div className="sectionBooking_Form">
@@ -320,13 +318,14 @@ function App() {
       </footer>
       
       
-      <div className="popup">   
+      <div className="popup" id="popup">   
         <div className="popup_Content">
           <div className="popup__left">
             <img src={popup_image_1} alt="Tour" className="popup__img"/>
             <img src={popup_image_2} alt="Tour" className="popup__img"/>
           </div>
           <div className="popup__right">
+            <a href="#section-tours" className="popup__close">&times;</a>
             <h2 className="headingSecondary u_marginBottom__small">Start booking now</h2>
             <h3 className="headingTertiary u_marginBottom__small">Important - Please read these terms before booking</h3>
             <p className="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -339,7 +338,7 @@ function App() {
                 vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
                 euismod nisi porta.
             </p>
-            <a href="/#" className="ButtonGreen">Book now</a>
+            <a href="#section-tours" className="ButtonGreen">Book now</a>
           </div>
         </div>
       </div>
