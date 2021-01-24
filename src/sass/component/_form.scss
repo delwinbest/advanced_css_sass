@@ -31,12 +31,22 @@
             border-bottom: 3px solid $color-primary;
         }
 
+
+
     }
 
-
-
-
     &_Label {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
 
+    &_Input:placeholder-shown + &_Label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
     }
 }
