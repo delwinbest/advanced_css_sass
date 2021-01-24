@@ -3,7 +3,7 @@ import about_image_1 from './img/nat-1-large.jpg';
 import about_image_2 from './img/nat-2-large.jpg';
 import about_image_3 from './img/nat-3-large.jpg';
 import person_image_1 from './img/nat-8.jpg';
-import person_image_2 from './img/nat-9.jpg';
+// import person_image_2 from './img/nat-9.jpg';
 // import * as classes from './sass/App.module.scss';
 import './sass/App.scss';
 
@@ -194,22 +194,12 @@ function App() {
           </div>
 
           <div className="gridRow">
-            <div className="story">
-              <figure className="storyShape">
-                <img className="storyImage" src={person_image_1} alt="Person on a tour"/>
+            <div className="story ">
+              <figure className="story_Shape">
+                <img className="story_Image" src={person_image_1} alt="Person on a tour"/>
+                <figcaption className="story_Caption">Mary Smith</figcaption>
               </figure>
-              <div className="storyText">
-                <h3 className="headingTertiary u_marginBottom__small">I had the best week ever with my family</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sit amet consectetur adipisicing elit, samet consectetur adipisicing elit, sit amet consectetur adipisicing. Consequuntur soluta unde minima qui delectus eos deserunt. . In eos exercitationem consequatur.
-                </p>
-              </div>
-            </div>
-            <div className="story">
-              <figure className="storyShape">
-                <img className="storyImage" src={person_image_2} alt="Person on a tour"/>
-              </figure>
-              <div className="storyText">
+              <div className="story_Text">
                 <h3 className="headingTertiary u_marginBottom__small">I had the best week ever with my family</h3>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit, sit amet consectetur adipisicing elit, samet consectetur adipisicing elit, sit amet consectetur adipisicing. Consequuntur soluta unde minima qui delectus eos deserunt. . In eos exercitationem consequatur.

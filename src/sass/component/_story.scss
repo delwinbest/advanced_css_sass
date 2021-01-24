@@ -9,8 +9,9 @@
 
     font-size: $default-font-size;
     transform: skewX(-12deg);
+    position: relative;
 
-    &Shape {
+    &_Shape {
         width: 15rem;
         height: 15rem;
         float: left;
@@ -21,11 +22,37 @@
         transform: translateX(-3rem) skewX(12deg);
     }
 
-    &Text {
+    &_Text {
         transform: skewX(12deg)
     }
 
-    &Image {
+    &_Image {
         height: 100%;
+        transition: all .5s;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+    }
+
+    &_Caption {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &_Caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    &:hover &_Image {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(.8);
     }
 }
