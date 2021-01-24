@@ -242,12 +242,12 @@ function App() {
                 <form action="/#" className="form">
                   <h2 className="headingSecondary u_marginBottom__medium">Start booking now</h2>
                   <div className="form_Group">
-                    <input type="text" className="form_Input" placeholder="Full Name" id="name" required/>
-                    <label htmlFor="name" className="form_Label">Full Name</label>
+                    <input type="text" className="form_Input" placeholder="Full name" id="name" required/>
+                    <label htmlFor="name" className="form_Label">Full name</label>
                   </div>
                   <div className="form_Group">
-                    <input type="email" className="form_Input" placeholder="Email Address" id="email" required/>
-                    <label htmlFor="email" className="form_Label">Email Address</label>
+                    <input type="email" className="form_Input" placeholder="Email address" id="email" required/>
+                    <label htmlFor="email" className="form_Label">Email address</label>
                   </div>
                 </form>
               </div>
