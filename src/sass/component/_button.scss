@@ -1,4 +1,5 @@
 .Button {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -9,12 +10,18 @@
         transition: all .2s; 
         position: relative;
         font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
+        
+
         &:after {
             @extend %ButtonAfter;
         }
+
         &:hover {
             @extend %ButtonHover;
         }
+        &:focus,
         &:active {
             @extend %ButtonActive;
         }
@@ -34,7 +41,8 @@
         &:hover {
             @extend %ButtonHover;
         }
-        &.active {
+        &:focus,
+        &:active {
             @extend %ButtonActive;
         }
     }
@@ -50,7 +58,8 @@
         &:hover {
             @extend %ButtonHover;
         }
-        &.active {
+        &:focus,
+        &:active {
             @extend %ButtonActive;
         }
     }
@@ -84,6 +93,7 @@
 }
 
 %ButtonActive {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(black,.3);
 }

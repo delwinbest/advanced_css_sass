@@ -249,7 +249,7 @@ function App() {
                     <input type="email" className="form_Input" placeholder="Email address" id="email" required/>
                     <label htmlFor="email" className="form_Input__Label">Email address</label>
                   </div>
-                  <div className="form_Group">
+                  <div className="form_Group u_marginBottom__medium ">
                     <div className="form_RadioGroup">
                       <input type="radio" className="form_RadioInput" id="small" name="groupsize"/>
                       <label htmlFor="small" className="form_RadioInput__Label">
@@ -262,6 +262,9 @@ function App() {
                       <span className="form__RadioButton"></span>
                         Large tour group</label>
                     </div>
+                  </div>
+                  <div className="form_Group">
+                    <button className="ButtonGreen">Next Step {String.fromCharCode(0x2192)}</button>
                   </div>
                 </form>
               </div>
