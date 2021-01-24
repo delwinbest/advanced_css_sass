@@ -13,6 +13,23 @@ import './sass/App.scss';
 function App() {
   return (
     <div className="App">
+
+      <div className="navigation">
+        <input type="checkbox" className="navigation_Checkbox" id="navi-toggle"/>
+        <label htmlFor="navi-toggle" className="navigation_Button">MENU</label>
+        <div className="navigation__background">&nbsp;</div>
+
+        <nav className="navigation__nav">
+          <ul className="navigation_List">
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link">About Natours</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Your benefits</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Popular tours</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Stories</a></li>
+            <li className="navigation_List_Item"><a href="/#" className="navigation__link">Book now</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <header className="header">
         <div className="logo__Box">
           <img src={logo} alt="Logo" className="logo"/>
