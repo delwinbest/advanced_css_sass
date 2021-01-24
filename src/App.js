@@ -338,7 +338,7 @@ function App() {
                 vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
                 euismod nisi porta.
             </p>
-            <a href="#section-tours" className="ButtonGreen">Book now</a>
+            <a href="#section-booking" className="ButtonGreen">Book now</a>
           </div>
         </div>
       </div>
