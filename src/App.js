@@ -235,6 +235,25 @@ function App() {
             <a href="/#" className="buttonText">Read all stories {String.fromCharCode(0x2192)}</a>
           </div>
         </section>
+        <section className="sectionBooking">
+          <div className="gridRow">
+            <div className="sectionBooking_Container">
+              <div className="sectionBooking_Form">
+                <form action="/#" className="form">
+                  <h2 className="headingSecondary u_marginBottom__medium">Start booking now</h2>
+                  <div className="form_Group">
+                    <input type="text" className="form_Input" placeholder="Full Name" id="name" required/>
+                    <label htmlFor="name" className="form_Label">Full Name</label>
+                  </div>
+                  <div className="form_Group">
+                    <input type="email" className="form_Input" placeholder="Email Address" id="email" required/>
+                    <label htmlFor="email" className="form_Label">Email Address</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* <section className={gridTest}>
