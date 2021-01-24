@@ -243,11 +243,21 @@ function App() {
                   <h2 className="headingSecondary u_marginBottom__medium">Start booking now</h2>
                   <div className="form_Group">
                     <input type="text" className="form_Input" placeholder="Full name" id="name" required/>
-                    <label htmlFor="name" className="form_Label">Full name</label>
+                    <label htmlFor="name" className="form_Input__Label">Full name</label>
                   </div>
                   <div className="form_Group">
                     <input type="email" className="form_Input" placeholder="Email address" id="email" required/>
-                    <label htmlFor="email" className="form_Label">Email address</label>
+                    <label htmlFor="email" className="form_Input__Label">Email address</label>
+                  </div>
+                  <div className="form_Group">
+                    <div className="form_RadioGroup">
+                      <input type="radio" className="form_RadioInput" id="small" name="groupsize"/>
+                      <label htmlFor="small" className="form_RadioInput__Label">Small tour group</label>
+                    </div>
+                    <div className="form_RadioGroup">
+                      <input type="radio" className="form_RadioInput" id="large" name="groupsize"/>
+                      <label htmlFor="large" className="form_RadioInput__Label">Large tour group</label>
+                    </div>
                   </div>
                 </form>
               </div>

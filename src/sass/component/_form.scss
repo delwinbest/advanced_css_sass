@@ -16,6 +16,7 @@
         border-bottom: 3px solid transparent;
         width: 90%;
         display: block;
+        transition: all .3s;
 
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
@@ -31,22 +32,34 @@
             border-bottom: 3px solid $color-primary;
         }
 
-
+        &__Label {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-left: 2rem;
+            margin-top: .7rem;
+            display: block;
+            transition: all .3s;
+        }
 
     }
 
-    &_Label {
-        font-size: 1.4rem;
-        font-weight: 700;
-        margin-left: 2rem;
-        margin-top: .7rem;
-        display: block;
-        transition: all .3s;
-    }
-
-    &_Input:placeholder-shown + &_Label {
+    &_Input:placeholder-shown + &_Input__Label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
     }
+
+    
+    &_RadioGroup {
+
+    }
+
+    &_RadioInput {
+
+
+        &__Label {
+            
+        }
+    }
+
 }
