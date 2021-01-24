@@ -2,6 +2,8 @@ import logo from './img/logo-white.png';
 import about_image_1 from './img/nat-1-large.jpg';
 import about_image_2 from './img/nat-2-large.jpg';
 import about_image_3 from './img/nat-3-large.jpg';
+import person_image_1 from './img/nat-8.jpg';
+import person_image_2 from './img/nat-9.jpg';
 // import * as classes from './sass/App.module.scss';
 import './sass/App.scss';
 
@@ -186,6 +188,36 @@ function App() {
             </div>
         </section>
 
+        <section className="sectionStories">
+          <div className="u_centerText u_marginBottom__big">
+            <h2 className="headingSecondary">We make people genuinely happy</h2>
+          </div>
+
+          <div className="gridRow">
+            <div className="story">
+              <figure className="storyShape">
+                <img className="storyImage" src={person_image_1} alt="Person on a tour"/>
+              </figure>
+              <div className="storyText">
+                <h3 className="headingTertiary u_marginBottom__small">I had the best week ever with my family</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sit amet consectetur adipisicing elit, samet consectetur adipisicing elit, sit amet consectetur adipisicing. Consequuntur soluta unde minima qui delectus eos deserunt. . In eos exercitationem consequatur.
+                </p>
+              </div>
+            </div>
+            <div className="story">
+              <figure className="storyShape">
+                <img className="storyImage" src={person_image_2} alt="Person on a tour"/>
+              </figure>
+              <div className="storyText">
+                <h3 className="headingTertiary u_marginBottom__small">I had the best week ever with my family</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sit amet consectetur adipisicing elit, samet consectetur adipisicing elit, sit amet consectetur adipisicing. Consequuntur soluta unde minima qui delectus eos deserunt. . In eos exercitationem consequatur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* <section className={gridTest}>
