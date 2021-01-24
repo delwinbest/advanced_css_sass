@@ -4,6 +4,8 @@ import about_image_2 from './img/nat-2-large.jpg';
 import about_image_3 from './img/nat-3-large.jpg';
 import person_image_1 from './img/nat-8.jpg';
 import person_image_2 from './img/nat-9.jpg';
+import background_video_mp4 from './img/video.mp4';
+import background_video_webm from './img/video.mp4';
 // import * as classes from './sass/App.module.scss';
 import './sass/App.scss';
 
@@ -189,6 +191,13 @@ function App() {
         </section>
 
         <section className="sectionStories">
+          <div className="bg_Video">
+            <video className="bg_Content" autoPlay muted loop>
+              <source src={background_video_mp4} type="video/mp4" />
+              <source src={background_video_webm} type="video/webm" />
+              Your browser is not supported!
+            </video>
+          </div>
           <div className="u_centerText u_marginBottom__big">
             <h2 className="headingSecondary">We make people genuinely happy</h2>
           </div>
