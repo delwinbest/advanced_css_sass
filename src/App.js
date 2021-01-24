@@ -5,7 +5,7 @@ import about_image_3 from './img/nat-3-large.jpg';
 import person_image_1 from './img/nat-8.jpg';
 import person_image_2 from './img/nat-9.jpg';
 import background_video_mp4 from './img/video.mp4';
-import background_video_webm from './img/video.mp4';
+import background_video_webm from './img/video.webm';
 // import * as classes from './sass/App.module.scss';
 import './sass/App.scss';
 
