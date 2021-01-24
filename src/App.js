@@ -252,11 +252,15 @@ function App() {
                   <div className="form_Group">
                     <div className="form_RadioGroup">
                       <input type="radio" className="form_RadioInput" id="small" name="groupsize"/>
-                      <label htmlFor="small" className="form_RadioInput__Label">Small tour group</label>
+                      <label htmlFor="small" className="form_RadioInput__Label">
+                        <span className="form__RadioButton"></span>
+                        Small tour group</label>
                     </div>
                     <div className="form_RadioGroup">
                       <input type="radio" className="form_RadioInput" id="large" name="groupsize"/>
-                      <label htmlFor="large" className="form_RadioInput__Label">Large tour group</label>
+                      <label htmlFor="large" className="form_RadioInput__Label">
+                      <span className="form__RadioButton"></span>
+                        Large tour group</label>
                     </div>
                   </div>
                 </form>

@@ -39,6 +39,7 @@
             margin-top: .7rem;
             display: block;
             transition: all .3s;
+            
         }
 
     }
@@ -51,14 +52,49 @@
 
     
     &_RadioGroup {
-
+        width: 46%;
+        display: inline-block;
     }
 
     &_RadioInput {
-
+        display: none;
 
         &__Label {
-            
+            font-size: $default-font-size;
+            cursor: pointer;
+            position: relative;
+            padding-left: 4.55rem;
+        }
+
+        &:checked ~ &__Label .form__RadioButton::after {
+            opacity: 1;
+        }
+    }
+
+    &__RadioButton {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.5rem;
+        
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: all .2s;
         }
     }
 
