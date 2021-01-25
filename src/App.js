@@ -223,7 +223,7 @@ class App extends Component {
           </section>
           <section className="sectionStories" id="section-stories">
             <div className="bg_Video">
-              <video className="bg_Content" autoPlay muted loop>
+              <video className="bg_Content" autoPlay muted loop preload>
                 <source src={background_video_mp4} type="video/mp4" />
                 <source src={background_video_webm} type="video/webm" />
                 Your browser is not supported!
