@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './img/logo-white.png';
 import logo_green_1x from './img/logo-green-1x.png';
+import logo_green_small_1x from './img/logo-green-small-1x.png';
+import logo_green_small_2x from './img/logo-green-small-2x.png';
 import logo_green_2x from './img/logo-green-2x.png';
 import about_image_1 from './img/nat-1-large.jpg';
 import about_image_2 from './img/nat-2-large.jpg';
@@ -307,7 +309,11 @@ class App extends Component {
 
         <footer className="footer">
           <div className="footer_LogoBox">
-            <img srcSet={`${logo_green_2x} 2x, ${logo_green_1x} 1x`} alt="Full Logo" className="footer_Logo"/>
+            <picture className="footer_Logo"> 
+              <source srcSet={`${logo_green_small_2x} 2x, ${logo_green_small_1x} 1x`} media="(max-width: 37.5em)" />
+              <img srcSet={`${logo_green_2x} 2x, ${logo_green_1x} 1x`} alt="Full Logo" className="footer_Logo"/>
+            </picture>
+            
           </div>
           <div className="gridRow">
             <div className="gridRow_Col__1_of_2">
