@@ -6,12 +6,28 @@
     box-sizing: inherit;
 }
 
+html {
+    font-size: 62.5%;
+    // @include respond(phone) { NOT NEEDED because second query aplies too
+    //     font-size: 50%;
+    // }
+    @include respond(tab-land) {
+        font-size: 56.25%; // want 1 rem = 9px ; 9/16px = 56.25%
+    }
+    @include respond(tab-port) {
+        font-size: 50%; // want 1 rem = 8px ; 8/16px = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; // want 1 rem = 12px ; 12/16px = 75%
+    }
+}
 .App {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1rem; //1 rem = 10px; 10px/16px = 62.5%
     line-height: 1.7;
     color: $color-grey-dark-1;
     padding: 3rem;
     box-sizing: border-box;
+
 }

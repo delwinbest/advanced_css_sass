@@ -28,13 +28,7 @@
 900-1200px: Tablet Landscape
 [1200 - 1800] normal styles, default CSS
 1800px+: Big Desktop
-*/
-
-@mixin respond-phone {
-    @media (max-width: 600px) { @content };
-}
-
-/*
+ 
 $brekpoint argument choices:
 - phone
 - tab-port
@@ -53,7 +47,7 @@ $brekpoint argument choices:
     @if ($breakpoint == "tab-land") {
         @media (max-width: 75em) { @content }; //1200px
     }
-    @if ($breakpoint == "big-desktopn") {
+    @if ($breakpoint == "big-desktop") {
         @media (min-width: 112.5em) { @content }; //1800px
     }
 }
