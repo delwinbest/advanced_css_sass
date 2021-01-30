@@ -5,6 +5,9 @@
     // height: 120vh;
     overflow: scroll;
     // min-height:100%;
+    @include respond(tab-port) {
+        padding: 24rem 3rem;
+    }
 }
 
 .sectionFeatures {
@@ -27,6 +30,10 @@
     & > * {
         transform: skewY(7deg);
     }
+    @include respond(tab-port) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
 }
 
 .sectionTours {
@@ -34,6 +41,10 @@
     padding: 25rem 0 12rem 0;
     margin-top: -20vh;
     // overflow: scroll;
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+    
 }
 
 .sectionStories {
@@ -41,6 +52,9 @@
     margin-top: -10vh;
     // overflow: scroll;
     position: relative;
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .sectionBooking {
