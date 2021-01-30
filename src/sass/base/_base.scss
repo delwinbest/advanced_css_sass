@@ -11,17 +11,17 @@ html {
     // @include respond(phone) { NOT NEEDED because second query aplies too
     //     font-size: 50%;
     // }
-    @include respond(tab-land) {
+    @include respond(tab-land) { //75em) { @content }; //1200px
         font-size: 56.25%; // want 1 rem = 9px ; 9/16px = 56.25%
     }
-    @include respond(tab-port) {
+    @include respond(tab-port) { //56.25em) { @content }; //900px
         font-size: 50%; // want 1 rem = 8px ; 8/16px = 50%
     }
     @include respond(big-desktop) {
         font-size: 75%; // want 1 rem = 12px ; 12/16px = 75%
     }
 }
-.App {
+.body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 1rem; //1 rem = 10px; 10px/16px = 62.5%
@@ -29,5 +29,9 @@ html {
     color: $color-grey-dark-1;
     padding: 3rem;
     box-sizing: border-box;
+
+    @include respond(tab-port) { //56.25em) { @content }; //900px
+        padding: 0; // want 1 rem = 8px ; 8/16px = 50%
+    }
 
 }

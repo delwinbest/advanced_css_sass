@@ -27,7 +27,7 @@ class App extends Component {
   
   render () {
     return (
-      <div className="App">
+      <div className="body">
 
         <div className="navigation">
           <input type="checkbox" className="navigation_Checkbox" id="navi-toggle" checked={this.state.menuActive} readOnly/>

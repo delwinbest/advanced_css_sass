@@ -22,6 +22,41 @@
     text-transform: uppercase;
 }
 
+.header_textBox {
+    &_headingPrimary {
+        color: white;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        margin-bottom: 6rem;
+
+        &__Main {
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            @include respond(phone){
+                letter-spacing: 1rem;
+                font-size: 5rem;
+            }
+        }
+        &__Sub {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.75rem;
+            animation-name: moveInRight;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            @include respond(phone){
+                letter-spacing: .5rem;
+            }
+        }
+    }
+}
+
 .paragraph {
     font-size: $default-font-size;
     &:not(:last-child) {
