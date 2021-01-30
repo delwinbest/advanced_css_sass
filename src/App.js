@@ -129,11 +129,11 @@ class App extends Component {
             <div className="gridRow">
             <div className="gridRow_Col__1_of_3">
               <div className="card">
-                <div className="card_Side__Front">
-                  <div className="cardPicture__1">
+                <div className="card_Side card_Side__Front">
+                  <div className="cardPicture cardPicture__1">
                   </div>
                   <h4 className="cardHeading">
-                    <span className="cardHeading_Span__1">The Sea Explorer</span>
+                    <span className="cardHeading_Span cardHeading_Span__1">The Sea Explorer</span>
                   </h4>
                   <div className="cardDetails">
                     <ul>
@@ -145,7 +145,7 @@ class App extends Component {
                     </ul>
                   </div>
                 </div>
-                <div className="card_Side__Back__1">
+                <div className="card_Side card_Side__Back card_Side__Back__1">
                   <div className="card_CTA">
                     <div className="card_PriceBox">
                       <p className="card_Pricebox__priceOnly">Only</p>
@@ -158,12 +158,12 @@ class App extends Component {
             </div>
             <div className="gridRow_Col__1_of_3">
               <div className="card">
-              <div className="card_Side__Front">
-                  <div className="cardPicture__2">
+              <div className="card_Side card_Side__Front">
+                  <div className="cardPicture cardPicture__2">
 
                   </div>
                   <h4 className="cardHeading">
-                    <span className="cardHeading_Span__2">The Forest Hiker</span>
+                    <span className="cardHeading_Span cardHeading_Span__2">The Forest Hiker</span>
                   </h4>
                   <div className="cardDetails">
                     <ul>
@@ -175,7 +175,7 @@ class App extends Component {
                     </ul>
                   </div>
                 </div>
-                <div className="card_Side__Back__2">
+                <div className="card_Side card_Side__Back card_Side__Back__2">
                   <div className="card_CTA">
                     <div className="card_PriceBox">
                       <p className="card_Pricebox__priceOnly">Only</p>
@@ -188,12 +188,12 @@ class App extends Component {
             </div>
             <div className="gridRow_Col__1_of_3">
               <div className="card">
-              <div className="card_Side__Front">
-                  <div className="cardPicture__3">
+              <div className="card_Side card_Side__Front">
+                  <div className="cardPicture cardPicture__3">
 
                   </div>
                   <h4 className="cardHeading">
-                    <span className="cardHeading_Span__3">The Snow Adventurer</span>
+                    <span className="cardHeading_Span cardHeading_Span__3">The Snow Adventurer</span>
                   </h4>
                   <div className="cardDetails">
                     <ul>
@@ -205,7 +205,7 @@ class App extends Component {
                     </ul>
                   </div>
                 </div>
-                <div className="card_Side__Back__3">
+                <div className="card_Side card_Side__Back card_Side__Back__3">
                   <div className="card_CTA">
                     <div className="card_PriceBox">
                       <p className="card_Pricebox__priceOnly">Only</p>

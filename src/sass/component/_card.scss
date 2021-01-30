@@ -17,16 +17,13 @@
         overflow: hidden;
 
         &__Front {
-            @extend .card_Side;
             background-color: white;
         }
 
         &__Back {
-            @extend .card_Side;
             transform: rotateY(180deg);
 
             &__1 {
-                @extend .card_Side__Back;
                 background-image: linear-gradient(
                     to bottom right, 
                     $color-secondary-light, 
@@ -34,7 +31,6 @@
             }
 
             &__2 {
-                @extend .card_Side__Back;
                 background-image: linear-gradient(
                     to bottom right, 
                     $color-primary-light, 
@@ -42,7 +38,6 @@
             }
 
             &__3 {
-                @extend .card_Side__Back;
                 background-image: linear-gradient(
                     to bottom right, 
                     $color-tertiary-light, 
@@ -70,7 +65,6 @@
 
 
         &__1 {
-            @extend .cardPicture;
             background-image: linear-gradient(
                     to bottom right, 
                     $color-secondary-light, 
@@ -79,7 +73,6 @@
         }
 
         &__2 {
-            @extend .cardPicture;
             background-image: linear-gradient(
                     to bottom right, 
                     $color-primary-light, 
@@ -88,7 +81,6 @@
         }
 
         &__3 {
-            @extend .cardPicture;
             background-image: linear-gradient(
                     to bottom right, 
                     $color-tertiary-light, 
@@ -114,7 +106,6 @@
         box-decoration-break: clone;
 
         &__1 {
-            @extend .cardHeading_Span;
             background-image: linear-gradient(
                 to right bottom, 
                 rgba($color-secondary-light, .85), 
@@ -122,7 +113,6 @@
         }
 
         &__2 {
-            @extend .cardHeading_Span;
             background-image: linear-gradient(
                 to right bottom, 
                 rgba($color-primary-light, .85), 
@@ -130,7 +120,6 @@
         }
 
         &__3 {
-            @extend .cardHeading_Span;
             background-image: linear-gradient(
                 to right bottom, 
                 rgba($color-tertiary-light, .85), 
@@ -184,6 +173,187 @@
         text-transform: uppercase;
     }
 
+    @include respond(tab-port) {
+        perspective: 1500px;
+    -moz-perspective: 1500px;
+    position: relative;
+    height: 52rem;
 
+    &_Side {
+        height: 52rem;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 40px rgba(black, 0.15);
+        overflow: hidden;
+
+        &__Front {
+            background-color: white;
+        }
+
+        &__Back {
+            transform: rotateY(180deg);
+
+            &__1 {
+                background-image: linear-gradient(
+                    to bottom right, 
+                    $color-secondary-light, 
+                    $color-secondary-dark);
+            }
+
+            &__2 {
+                background-image: linear-gradient(
+                    to bottom right, 
+                    $color-primary-light, 
+                    $color-primary-dark);
+            }
+
+            &__3 {
+                background-image: linear-gradient(
+                    to bottom right, 
+                    $color-tertiary-light, 
+                    $color-tertiary-dark);
+            }
+
+        }
+    }
+
+    &:hover &_Side__Front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &_Side__Back{
+        transform: rotateY(0deg);
+    }
+
+
+    &Picture {
+        height: 23rem;
+        background-size: cover;
+        background-blend-mode: soft-light;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+        &__1 {
+            background-image: linear-gradient(
+                    to bottom right, 
+                    $color-secondary-light, 
+                    $color-secondary-dark), url($card-image-1);
+            
+        }
+
+        &__2 {
+            background-image: linear-gradient(
+                    to bottom right, 
+                    $color-primary-light, 
+                    $color-primary-dark), url($card-image-2);
+            
+        }
+
+        &__3 {
+            background-image: linear-gradient(
+                    to bottom right, 
+                    $color-tertiary-light, 
+                    $color-tertiary-dark), url($card-image-3);
+            
+        }
+    }
+
+    &Heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        width: 75%;
+    }
+
+    &Heading_Span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+
+        &__1 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-secondary-light, .85), 
+                rgba($color-secondary-dark, .85));
+        }
+
+        &__2 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-primary-light, .85), 
+                rgba($color-primary-dark, .85));
+        }
+
+        &__3 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-tertiary-light, .85), 
+                rgba($color-tertiary-dark, .85));
+        }
+    }
+
+    &Details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+
+
+    &_CTA {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &_PriceBox {
+        text-align: center;
+        color: white;
+        margin-bottom: 8rem;
+
+        &__priceValue {
+            font-size: 6rem;
+            font-weight: 100;
+        }
+    }
+
+    &_Pricebox__priceOnly {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    } 
+    
+    
+    }
+
+
+
+
+  
 }
 
