@@ -6,14 +6,6 @@
     }
 }
 
-@mixin columnProperties {
-    // background-color: orangered;
-    float: left;
-    &:not(:last-child) {
-        margin-right: $gutter-horizontal; 
-    }
-}
-
 @mixin absCenter {
     position: absolute;
     top: 50%;
