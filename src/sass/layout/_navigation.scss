@@ -12,6 +12,11 @@
         z-index: 1000;
         transition: all .8s cubic-bezier(0.83, 0, 0.17, 1);;
         // transform: scale(80);
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
         
     }
 
@@ -95,6 +100,14 @@
         &:active {
             box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
             top: 6.2rem;
+        }
+
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+            &:active {
+                top: 4.2rem;
+            }
         }
     }
 
