@@ -4,9 +4,13 @@ import logo_green_1x from './img/logo-green-1x.png';
 import logo_green_small_1x from './img/logo-green-small-1x.png';
 import logo_green_small_2x from './img/logo-green-small-2x.png';
 import logo_green_2x from './img/logo-green-2x.png';
-import about_image_1 from './img/nat-1-large.jpg';
-import about_image_2 from './img/nat-2-large.jpg';
-import about_image_3 from './img/nat-3-large.jpg';
+import about_image_1 from './img/nat-1.jpg';
+import about_image_2 from './img/nat-2.jpg';
+import about_image_3 from './img/nat-3.jpg';
+import about_image_1_large from './img/nat-1-large.jpg';
+import about_image_2_large from './img/nat-2-large.jpg';
+import about_image_3_large from './img/nat-3-large.jpg';
+
 import person_image_1 from './img/nat-8.jpg';
 import person_image_2 from './img/nat-9.jpg';
 import popup_image_1 from './img/nat-8.jpg';
@@ -79,9 +83,18 @@ class App extends Component {
             </div>
             <div className="gridRow_Col__1_of_2">
               <div className="composition">
-                <img src={about_image_1} alt="" className="composition_Photo composition_Photo__p1"/>
-                <img src={about_image_2} alt="" className="composition_Photo composition_Photo__p2"/>
-                <img src={about_image_3} alt="" className="composition_Photo composition_Photo__p3"/>
+
+                <img src={about_image_1} alt="" className="composition_Photo composition_Photo__p1"
+                  srcset={`${about_image_1} 300w, ${about_image_1_large} 1000w`}
+                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" />
+                <img src={about_image_2} alt="" className="composition_Photo composition_Photo__p2"
+                  srcset={`${about_image_2} 300w, ${about_image_2_large} 1000w`}
+                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" />
+                <img src={about_image_3} alt="" className="composition_Photo composition_Photo__p3"
+                  srcset={`${about_image_3} 300w, ${about_image_3_large} 1000w`}
+                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" />
+
+
               </div>
             </div>
           </section>
