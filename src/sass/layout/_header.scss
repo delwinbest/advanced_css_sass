@@ -12,12 +12,13 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative;  /* This is now the position from where all children positions are based. */
 
-    @media (min-resolution: 192dpi) and (min-width: 600px) { //default for high res screen
-        background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.8)), 
-        url($hero-image);
+    @media (min-resolution: 192dpi) and (min-width: 600px),
+        (min-width: 2000px) { //default for high res screen
+            background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8), 
+            rgba($color-primary-dark, 0.8)), 
+            url($hero-image);
     }
 
     &_textBox {
