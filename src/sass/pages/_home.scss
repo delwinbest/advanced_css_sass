@@ -83,6 +83,7 @@
                 rgba(transparent, 0) 65%), 
                 url($booking-image);
             background-size: cover;
+            height: 100%;
         }
         @include respond(tab-port) {
             background-image: linear-gradient(
