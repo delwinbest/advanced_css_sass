@@ -5,7 +5,6 @@ function App() {
   return (
     <div>
       <header className="header">
-        Header
       </header>
       <body>
         TRILLO
