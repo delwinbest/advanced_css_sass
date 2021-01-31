@@ -1,12 +1,15 @@
 // import logo from './logo.svg';
-import './App.css';
+import './sass/main.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="header">
-        Some Text...
+        Header
       </header>
+      <body>
+        TRILLO
+      </body>
     </div>
   );
 }
