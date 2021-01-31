@@ -85,14 +85,14 @@ class App extends Component {
               <div className="composition">
 
                 <img src={about_image_1} alt="" className="composition_Photo composition_Photo__p1"
-                  srcset={`${about_image_1} 300w, ${about_image_1_large} 1000w`}
-                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" />
+                  srcset={`${about_image_1} 300w, ${about_image_1_large} 62.5em`}
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 18.75em" />
                 <img src={about_image_2} alt="" className="composition_Photo composition_Photo__p2"
-                  srcset={`${about_image_2} 300w, ${about_image_2_large} 1000w`}
-                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" />
+                  srcset={`${about_image_2} 300w, ${about_image_2_large} 62.5em`}
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 18.75em" />
                 <img src={about_image_3} alt="" className="composition_Photo composition_Photo__p3"
-                  srcset={`${about_image_3} 300w, ${about_image_3_large} 1000w`}
-                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" />
+                  srcset={`${about_image_3} 300w, ${about_image_3_large} 62.5em`}
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 18.75em" />
 
 
               </div>
