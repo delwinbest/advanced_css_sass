@@ -18,6 +18,19 @@ function App() {
                 </svg>
               </button>
             </form>
+            <nav className="user-nav">
+              <div className="user-nav__icon-box">
+                <svg className="user-nav__icon">
+                  <use href={`${svg_sprite}#icon-bookmark`}></use>
+                </svg>
+              </div>
+              <div className="user-nav__icon-box">
+                <svg className="user-nav__icon">
+                  <use href={`${svg_sprite}#icon-chat`}></use>
+                </svg>
+                SPAN
+              </div>
+            </nav>
           </header>
           <div className="content">
             <nav className="sidebar">
