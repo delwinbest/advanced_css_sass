@@ -4,10 +4,20 @@ import './sass/main.scss';
 function App() {
   return (
     <div>
-      <header className="header">
-      </header>
       <body>
-        TRILLO
+        <div className="container">
+          <header className="header">
+            Header
+          </header>
+          <div className="content">
+            <nav className="sidebar">
+              Navigation
+            </nav>
+            <main className="hotel-view">
+              Hotel View
+            </main>
+          </div>
+        </div>
       </body>
     </div>
   );
