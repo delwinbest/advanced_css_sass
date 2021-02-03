@@ -1,0 +1,60 @@
+/////////////////////////////
+// LOGO
+/////////////////////////////
+.logo {
+    height: 3.25rem;
+}
+
+/////////////////////////////
+// SEARCH BOX
+/////////////////////////////
+.search {
+    background-color: orangered;
+    &__input {
+
+    }
+
+    &__button {
+
+    }
+
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+}
+
+
+
+/////////////////////////////
+// USER NAV
+/////////////////////////////
+
+.user-nav {
+    background-color: greenyellow;
+    display: flex;
+    &__icon-box {
+
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    &__notification {
+
+
+    }
+
+    &__user-photo {
+        height: 3.75rem;
+        border-radius: 55%;
+    }
+
+    &__user-name {
+
+    }
+}

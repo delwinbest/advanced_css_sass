@@ -2,6 +2,7 @@
 import './sass/main.scss';
 import logo from './img/logo.png';
 import svg_sprite from './img/sprite.svg';
+import user_img from './img/user.jpg';
 
 function App() {
   return (
@@ -28,7 +29,11 @@ function App() {
                 <svg className="user-nav__icon">
                   <use href={`${svg_sprite}#icon-chat`}></use>
                 </svg>
-                SPAN
+                <span className="user-nav__notification">13</span>
+              </div>
+              <div className="user-nav__user">
+                <img src={user_img} alt="" className="user-nav__user-photo"/>
+                <span className="user-nav__user_name">Delwin Best</span>
               </div>
             </nav>
           </header>
