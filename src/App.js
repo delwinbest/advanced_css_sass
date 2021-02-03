@@ -41,7 +41,7 @@ function App() {
           <div className="content">
             <nav className="sidebar">
               <ul className="side-nav">
-                <li className="side-nav__item">
+                <li className="side-nav__item side-nav__item--active">
                   <a href="/#" className="side-nav__link">
                     <svg className="side-nav__icon">
                       <use href={`${svg_sprite}#icon-home`}></use> 
