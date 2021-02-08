@@ -3,6 +3,9 @@ import './sass/main.scss';
 import logo from './img/logo.png';
 import svg_sprite from './img/sprite.svg';
 import user_img from './img/user.jpg';
+import hotel_img_1 from './img/hotel-1.jpg';
+import hotel_img_2 from './img/hotel-2.jpg';
+import hotel_img_3 from './img/hotel-3.jpg';
 
 function App() {
   return (
@@ -81,7 +84,17 @@ function App() {
 
             </nav>
             <main className="hotel-view">
-              Hotel View
+              <div className="gallery">
+                <figure className="gallery__item">
+                  <img src={hotel_img_1} alt="Hotel 1" className="gallery__photo"/>
+                </figure>
+                <figure className="gallery__item">
+                  <img src={hotel_img_2} alt="Hotel 2" className="gallery__photo"/>
+                </figure>
+                <figure className="gallery__item">
+                  <img src={hotel_img_3} alt="Hotel 3" className="gallery__photo"/>
+                </figure>
+              </div>
             </main>
           </div>
         </div>
