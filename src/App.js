@@ -3,6 +3,8 @@ import './sass/main.scss';
 import logo from './img/logo.png';
 import svg_sprite from './img/sprite.svg';
 import user_img from './img/user.jpg';
+import user_1 from './img/user-1.jpg';
+import user_2 from './img/user-2.jpg';
 import user_3 from './img/user-3.jpg';
 import user_4 from './img/user-4.jpg';
 import user_5 from './img/user-5.jpg';
@@ -163,7 +165,32 @@ function App() {
                   </div>
                 </div>
                 <div className="user-reviews">
-                  User Reviews
+                  <figure className="review">
+                    <blockquote className="review__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                    </blockquote>
+                    <figcaption className="review__user">
+                      <img src={user_1} alt="User 1" className="review__photo"/>
+                      <div className="review__user-box">
+                        <p className="review__user-name">Nick Smith</p>
+                        <p className="review__user-date">Feb 23rd, 2017</p>
+                        </div>
+                        <div className="review__rating">7.8</div>
+                    </figcaption>
+                  </figure>
+
+                  <figure className="review">
+                    <blockquote className="review__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.                    </blockquote>
+                    <figcaption className="review__user">
+                      <img src={user_2} alt="User 1" className="review__photo"/>
+                      <div className="review__user-box">
+                        <p className="review__user-name">Mary Thomas</p>
+                        <p className="review__user-date">Sep 13th, 2017</p>
+                      </div>
+                      <div className="review__rating">9.3</div>
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             </main>
