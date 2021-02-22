@@ -47,7 +47,6 @@
 }
 
 .description {
-    background-color: orangered;
     background-color: white;
     box-shadow: var(--shadow-light);
     padding: 3rem;
@@ -57,4 +56,7 @@
 
 .user-reviews {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -295,8 +295,17 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span {
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
+
     &:hover {
         color: var(--color-grey-dark-1);
+
+        span {
+            margin-left: 8px;
+        }
     }
 
     &:focus {
@@ -327,12 +336,6 @@
 .paragraph:not(:last-of-type) {
     margin-bottom: 2rem;
 }
-
-
-
-
-
-
 
 /////////////////////////////
 // LIST
