@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './sass/main.scss';
+import imgSprite from './img/sprite.svg';
 
 function App() {
   return (
@@ -17,12 +18,60 @@ function App() {
         </div>
 
         <section className="features">
-          <div className="feature">feature 1</div>
-          <div className="feature">feature 2</div>
-          <div className="feature">feature 3</div>
-          <div className="feature">feature 4</div>
-          <div className="feature">feature 5</div>
-          <div className="feature">feature 6</div>
+          <div className="feature">
+            <svg className="feature__icon">
+              <use xlinkHref={imgSprite + '#icon-global'} />
+            </svg>
+            <h4 className="heading-4 heading-4--dark">World's best luxury homes</h4>
+            <p className="feature__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.
+            </p>
+          </div>
+          <div className="feature">
+            <svg className="feature__icon">
+              <use xlinkHref={imgSprite + '#icon-trophy'} />
+            </svg>
+            <h4 className="heading-4 heading-4--dark">Only the best properties</h4>
+            <p className="feature__text">
+              Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.
+            </p>
+          </div>
+          <div className="feature">
+            <svg className="feature__icon">
+              <use xlinkHref={imgSprite + '#icon-map-pin'} />
+            </svg>
+            <h4 className="heading-4 heading-4--dark">All homes in top locations</h4>
+            <p className="feature__text">
+              Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.
+            </p>
+          </div>
+          <div className="feature">
+            <svg className="feature__icon">
+              <use xlinkHref={imgSprite + '#icon-key'} />
+            </svg>
+            <h4 className="heading-4 heading-4--dark">Your home in one week</h4>
+            <p className="feature__text">
+              Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div className="feature">
+            <svg className="feature__icon">
+              <use xlinkHref={imgSprite + '#icon-presentation'} />
+            </svg>
+            <h4 className="heading-4 heading-4--dark">Top 1% realtors</h4>
+            <p className="feature__text">
+              Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.
+            </p>
+          </div>
+          <div className="feature">
+            <svg className="feature__icon">
+              <use xlinkHref={imgSprite + '#icon-lock'} />
+            </svg>
+            <h4 className="heading-4 heading-4--dark">Secure payments on nexter</h4>
+            <p className="feature__text">
+              Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.
+            </p>
+          </div>
         </section>
 
         <div className="story__pictures">
