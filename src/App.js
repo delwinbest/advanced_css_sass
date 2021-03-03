@@ -97,6 +97,7 @@ function App() {
         </div>
 
         <section className="homes">
+
           <div className="home">
             <img src={imgHouse1} alt="House 1" className="home__img"/>
             <svg className="home__like">
@@ -123,14 +124,14 @@ function App() {
             </div>
             <div className="home__price">
               <svg>
-                <use xlinkHref={imgSprite + '#icon-key-icon'} />
+                <use xlinkHref={imgSprite + '#icon-key'} />
               </svg>
               <p>$1,200,000</p>
             </div>
-            <button className="cta">Contact realtor</button>
+            <button className="btn home__btn">Contact realtor</button>
           </div>
 
-          <div className="home"><div className="home">
+          <div className="home">
             <img src={imgHouse2} alt="House 1" className="home__img"/>
             <svg className="home__like">
               <use xlinkHref={imgSprite + '#icon-heart-full'} />
@@ -156,15 +157,14 @@ function App() {
             </div>
             <div className="home__price">
               <svg>
-                <use xlinkHref={imgSprite + '#icon-key-icon'} />
+                <use xlinkHref={imgSprite + '#icon-key'} />
               </svg>
               <p>$2,750,000</p>
             </div>
-            <button className="cta">Contact realtor</button>
-          </div>
+            <button className="btn home__btn">Contact realtor</button>
           </div>
           
-          <div className="home"><div className="home">
+          <div className="home">
             <img src={imgHouse3} alt="House 1" className="home__img"/>
             <svg className="home__like">
               <use xlinkHref={imgSprite + '#icon-heart-full'} />
@@ -190,15 +190,14 @@ function App() {
             </div>
             <div className="home__price">
               <svg>
-                <use xlinkHref={imgSprite + '#icon-key-icon'} />
+                <use xlinkHref={imgSprite + '#icon-key'} />
               </svg>
               <p>$850,000</p>
             </div>
-            <button className="cta">Contact realtor</button>
-          </div>
+            <button className="btn home__btn">Contact realtor</button>
           </div>
 
-          <div className="home"><div className="home">
+          <div className="home">
             <img src={imgHouse4} alt="House 4" className="home__img"/>
             <svg className="home__like">
               <use xlinkHref={imgSprite + '#icon-heart-full'} />
@@ -224,15 +223,14 @@ function App() {
             </div>
             <div className="home__price">
               <svg>
-                <use xlinkHref={imgSprite + '#icon-key-icon'} />
+                <use xlinkHref={imgSprite + '#icon-key'} />
               </svg>
               <p>$1,950,000</p>
             </div>
-            <button className="cta">Contact realtor</button>
-          </div>
+            <button className="btn home__btn">Contact realtor</button>
           </div>
 
-          <div className="home"><div className="home">
+          <div className="home">
             <img src={imgHouse5} alt="House 5" className="home__img"/>
             <svg className="home__like">
               <use xlinkHref={imgSprite + '#icon-heart-full'} />
@@ -258,15 +256,14 @@ function App() {
             </div>
             <div className="home__price">
               <svg>
-                <use xlinkHref={imgSprite + '#icon-key-icon'} />
+                <use xlinkHref={imgSprite + '#icon-key'} />
               </svg>
               <p>$9,500,000</p>
             </div>
-            <button className="cta">Contact realtor</button>
-          </div>
+            <button className="btn home__btn">Contact realtor</button>
           </div>
 
-          <div className="home"><div className="home">
+          <div className="home">
             <img src={imgHouse6} alt="House 6" className="home__img"/>
             <svg className="home__like">
               <use xlinkHref={imgSprite + '#icon-heart-full'} />
@@ -292,13 +289,13 @@ function App() {
             </div>
             <div className="home__price">
               <svg>
-                <use xlinkHref={imgSprite + '#icon-key-icon'} />
+                <use xlinkHref={imgSprite + '#icon-key'} />
               </svg>
               <p>$600,000</p>
             </div>
-            <button className="cta">Contact realtor</button>
+            <button className="btn home__btn">Contact realtor</button>
           </div>
-          </div>
+
         </section>
 
         <section className="gallery">
