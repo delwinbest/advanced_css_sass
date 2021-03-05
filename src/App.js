@@ -25,6 +25,12 @@ import imgGallery12 from './img/gal-12.jpeg';
 import imgGallery13 from './img/gal-13.jpeg';
 import imgGallery14 from './img/gal-14.jpeg';
 
+import imgLogo from './img/logo.png'
+import imgLogoBBC from './img/logo-bbc.png'
+import imgLogoBI from './img/logo-bi.png'
+import imgLogoFORBES from './img/logo-forbes.png'
+import imgLogoTECHCRUNCH from './img/logo-techcrunch.png'
+
 function App() {
   return (
     <div className="container">
@@ -33,7 +39,17 @@ function App() {
         </div>
 
         <header className="header">
-          
+          <img src={imgLogo} alt="Logo" className="header__logo"/>
+          <h3 className="heading-3">Your own home:</h3>
+          <h1 className="heading-1">The ultimate personal freedom</h1>
+          <button className="btn header__btn">View our properties</button>
+          <div className="header__seenon-text">Seen on</div>
+          <div className="header__seenon-logos">
+            <img src={imgLogoBBC} alt="Logo BBC"/>
+            <img src={imgLogoFORBES} alt="Logo Forbes"/>
+            <img src={imgLogoTECHCRUNCH} alt="Logo TC"/>
+            <img src={imgLogoBI} alt="Logo BI"/>
+          </div>
         </header>
 
         <div className="realtors">
