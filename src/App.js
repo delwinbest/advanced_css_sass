@@ -29,11 +29,11 @@ function App() {
   return (
     <div className="container">
         <div className="sidebar">
-          Sidebar
+        <button className="nav-btn"></button>
         </div>
 
         <header className="header">
-          Header
+          
         </header>
 
         <div className="realtors">
